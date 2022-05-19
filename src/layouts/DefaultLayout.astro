@@ -1,0 +1,18 @@
+---
+import NavBar from "../components/NavBar.astro";
+
+const {title = 'Taj Kirkpatrick Web Services | TKWS'} = Astro.props
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{title}</title>
+	</head>
+	<body>
+        <NavBar />
+        <main class="w-full h-screen overflow-hidden bg-slate-300">
+            <slot />
+        </main>
+	</body>
+</html>
