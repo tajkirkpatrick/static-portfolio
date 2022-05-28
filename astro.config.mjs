@@ -3,6 +3,7 @@ import tailwind from '@astrojs/tailwind';
 import turbolinks from '@astrojs/turbolinks';
 import vue from '@astrojs/vue';
 import { defineConfig } from 'astro/config';
+import { VitePWA } from 'vite-plugin-pwa';
 
 // https://astro.build/config
 export default defineConfig({
@@ -15,5 +16,6 @@ export default defineConfig({
     server: {
       host: '127.0.0.1',
     },
+    pplugins: [VitePWA()],
   },
 });

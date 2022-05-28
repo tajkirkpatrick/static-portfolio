@@ -1,5 +1,6 @@
 {
-  "prettier.enable": true,
+  "prettier.enable": false,
   "prettier.singleQuote": true,
-  "eslint.enable": true
+  "eslint.enable": false,
+  "editor.formatOnSave": false
 }
