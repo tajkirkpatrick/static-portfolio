@@ -12,5 +12,8 @@
     // Add type definitions for our Vite runtime.
     "types": ["vite/client"]
   },
+  "vueCompilerOptions": {
+    "experimentalDisableTemplateSupport": true
+  },
   "exclude": ["node_modules", "dist"]
 }

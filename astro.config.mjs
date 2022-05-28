@@ -1,12 +1,13 @@
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import turbolinks from '@astrojs/turbolinks';
+import vue from '@astrojs/vue';
 import { defineConfig } from 'astro/config';
 import { VitePWA } from 'vite-plugin-pwa';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), turbolinks(), sitemap()],
+  integrations: [tailwind(), turbolinks(), sitemap(), vue()],
   site: 'https://www.tajkirkpatrick.com/',
   vite: {
     build: {
@@ -29,7 +30,7 @@ export default defineConfig({
           id: '8f89565b-6081-4b95-989a-ed4902eaab0d',
           name: 'Taj Kirkpatrick Web Services',
           short_name: 'TKWS',
-          description: 'PWA powered by Astro JS',
+          description: 'Taj Kirkpatrick Web Services powered by Astro JS',
           theme_color: '#ffffff',
           background_color: '#ffffff',
           start_url: '/',
