@@ -7,48 +7,10 @@ import LinkedInNavLink from './NavLinks/LinkedInNavLink.astro';
 ---
 
 <nav class="flex flex-row w-full h-16 bg-slate-600 px-20 justify-around items-center text-white">
-    <div class="flex items-center gap-6 ml-28" id="myNav">
-        <div class="btn active">
-            <HomeNavLink />
-        </div>
-        <div class="btn">
-            <ContactMeNavLink />
-        </div>
-        <div class="btn">
-            <GithubNavLink />
-        </div>
-        <div class="btn">
-            <LinkedInNavLink />
-        </div>
+    <div class="flex items-center gap-6">
+        <HomeNavLink />
+        <ContactMeNavLink />
+        <GithubNavLink />
+        <LinkedInNavLink />
     </div>
 </nav>
-
-<style is:global>
-    .active {
-        background-color: rgb(59 130 246);
-        color: white;
-        font-weight: 700;
-        border-radius: 9999px;
-        padding-left: 1rem; /* 16px */
-        padding-right: 1rem; /* 16px */
-        padding-top: 0.5rem; /* 8px */
-        padding-bottom: 0.5rem; /* 8px */
-    }
-
-    .active:hover {
-        background-color: rgb(29 78 216);
-    }
-</style>
-
-<script is:inline>
-    // Add active class to the current button (highlight it)
-    var header = document.getElementById("myNav");
-    var btns = header.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-            var current = document.getElementsByClassName("active");
-            current[0].className = current[0].className.replace(" active", "");
-            this.className += " active";
-        });
-    }
-</script>
