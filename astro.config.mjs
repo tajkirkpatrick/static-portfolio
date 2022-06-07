@@ -32,7 +32,7 @@ export default defineConfig({
           description: 'Taj Kirkpatrick Web Services powered by Astro JS',
           theme_color: '#ffffff',
           background_color: '#ffffff',
-          start_url: '/index.html',
+          start_url: '/',
           icons: [
             {
               src: 'pwa-192x192.png',
