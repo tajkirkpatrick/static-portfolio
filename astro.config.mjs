@@ -2,6 +2,7 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import turbolinks from '@astrojs/turbolinks';
 import { defineConfig } from 'astro/config';
+import Unocss from 'unocss/vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 // https://astro.build/config
@@ -16,6 +17,8 @@ export default defineConfig({
       host: '127.0.0.1',
     },
     plugins: [
+      Unocss(),
+
       VitePWA({
         registerType: 'autoUpdate',
         includeAssets: [
